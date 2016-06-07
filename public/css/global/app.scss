@@ -1,0 +1,10 @@
+//import vendor
+
+//import variables
+@import 'variables';
+
+//import global base styles
+@import 'global';
+
+//import styles
+@import '../../views/**/*.scss';

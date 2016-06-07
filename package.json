@@ -1,0 +1,26 @@
+{
+  "name": "node-boilerplate",
+  "main": "server.js",
+  "version": "0.0.1",
+  "description": "Node Boilerplate",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Will Jay",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.4.20"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jasmine": "^2.3.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-sass-glob": "^1.0.6",
+    "merge-stream": "^1.0.0"
+  }
+}
