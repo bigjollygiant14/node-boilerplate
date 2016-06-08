@@ -3,7 +3,7 @@
 var gulp = require('gulp');
 
 //testing
-var jasmine = require('gulp-jasmine');
+var Server = require('karma').Server
 
 //front end
 var sass = require('gulp-sass'); //convert scss to css
@@ -19,7 +19,7 @@ var config = {
     sassLocations: ['./public/views/**/*.scss','./public/css/global/*.scss']
   },
   js: {
-    testFiles: './public/js/**/*.spec.js'
+    config: '/karma.conf.js'
   }
 }
 
@@ -35,9 +35,11 @@ gulp.task('sass', function(){
   return mergedStream;
 });
 
-gulp.task('test', function(){
-  gulp.src(config.js.testFiles)
-    .pipe( jasmine() );
+gulp.task('test', function(done){
+  new Server({
+    configFile: __dirname + config.js.config,
+    singleRun: true
+  }, done).start();
 });
 
 gulp.task('watch', function(){

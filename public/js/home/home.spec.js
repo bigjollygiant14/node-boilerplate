@@ -1,13 +1,8 @@
 'use strict';
 
-var homeModule = require('./home');
-console.log(home);
-console.log(homeModule);
-
 describe( 'home', function() {
-  console.log(homeModule);
-  it( 'connects', function() {
-    
-    console.log( homeModule );
+  it( 'returns true', function() {
+    expect( home.returnTrue ).not.toBe(undefined);
+    expect( home.returnTrue() ).toBe(true);
   });
 });

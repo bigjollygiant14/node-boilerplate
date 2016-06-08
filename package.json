@@ -18,9 +18,13 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
-    "gulp-jasmine": "^2.3.0",
     "gulp-sass": "^2.3.1",
     "gulp-sass-glob": "^1.0.6",
-    "merge-stream": "^1.0.0"
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "merge-stream": "^1.0.0",
+    "phantomjs-prebuilt": "^2.1.7"
   }
 }
