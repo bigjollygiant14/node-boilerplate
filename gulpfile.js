@@ -57,6 +57,4 @@ gulp.task('watch', function(){
   gulp.watch(config.sass.sassLocations, ['sass']);
 });
 
-gulp.task('default', function(){
-
-});
+gulp.task('default', ['sass','start','watch'], function(){});
