@@ -1,0 +1,25 @@
+{
+  "name": "node-boilerplate",
+  "description": "Node Boilerplate",
+  "main": "server.js",
+  "authors": [
+    "Will Jay"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "boilerplate"
+  ],
+  "homepage": "https://github.com/bigjollygiant14/node-boilerplate",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.6",
+    "lodash": "^4.13.1"
+  }
+}
