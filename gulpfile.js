@@ -5,6 +5,9 @@ var gulp = require('gulp');
 //testing
 var Server = require('karma').Server
 
+//server
+var nodemon = require('gulp-nodemon');
+
 //front end
 var sass = require('gulp-sass'); //convert scss to css
 var merge = require('merge-stream'); //merge the concatinated files
@@ -40,6 +43,14 @@ gulp.task('test', function(done){
     configFile: __dirname + config.js.config,
     singleRun: true
   }, done).start();
+});
+
+gulp.task('start', function(){
+  nodemon({
+    script: 'server.js',
+    ext: 'js html',
+    env: { 'NODE_ENV': 'development'}
+  })
 });
 
 gulp.task('watch', function(){

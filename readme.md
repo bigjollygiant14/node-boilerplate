@@ -15,13 +15,14 @@ Node Server Boilerplate
 
 
 ## Run Locally
-1. `node server.js`
+1. `gulp start`
 
 
 ## Dependencies
 
 
 ## Test
+`gulp test`
 
 
 ## Credits
