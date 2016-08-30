@@ -8,6 +8,13 @@ module.exports = function(config) {
     ],
     phantomjsLauncher: {
       exitOnResourceError: true
+    },
+    reporters: ['nyan'],
+    nyanReporter: {
+      suppressErrorReport: true,
+      suppressErrorHighlighting: true,
+      numberOfRainbowLines: 5,
+      renderOnRunCompleteOnly: false // default is false 
     }
   });
 };
