@@ -1,5 +1,11 @@
 'use strict';
 
+// To Do
+// Add JS Lint
+// Configure Browser Sync
+// Split gulp tasks
+// Add browserify
+
 var gulp = require('gulp');
 
 //testing
